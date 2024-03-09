@@ -70,6 +70,7 @@ class DefaultFirebaseOptions {
     projectId: 'my-dep-project',
     databaseURL: 'https://my-dep-project-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'my-dep-project.appspot.com',
+    iosClientId: '859879349110-d1e6h3j21rjviu50tro8k3v89443fumh.apps.googleusercontent.com',
     iosBundleId: 'com.example.second',
   );
 
@@ -80,6 +81,7 @@ class DefaultFirebaseOptions {
     projectId: 'my-dep-project',
     databaseURL: 'https://my-dep-project-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'my-dep-project.appspot.com',
+    iosClientId: '859879349110-5s9gv8gp7e7hkiu2khcnlkog8rs0o1e0.apps.googleusercontent.com',
     iosBundleId: 'com.example.second.RunnerTests',
   );
 }
