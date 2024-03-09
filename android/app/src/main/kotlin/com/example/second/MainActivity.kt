@@ -18,7 +18,7 @@ import android.os.ParcelUuid
 import java.nio.charset.Charset
 
 class MainActivity: FlutterActivity() {
-    private val CHANNEL = "com.example.first/advertise"
+    private val CHANNEL = "com.example.second/advertise"
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {

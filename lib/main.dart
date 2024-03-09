@@ -1,29 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:second/bluetooth/advertising.dart';
 import 'package:second/bluetooth/ble_scan.dart';
 import 'firebase_options.dart';
-import 'package:flutter/services.dart';
-import 'package:permission_handler/permission_handler.dart';
 
-Future<void> startAdvertising() async {
-  //await checkPermissionsAndStartAdvertising();
-  //print("Hi");
-  const platform = MethodChannel('com.example.first/advertise');
-
-  try {
-    var status = await Permission.bluetoothAdvertise.status;
-    if (!status.isGranted) {
-      status = await Permission.bluetoothAdvertise.request();
-    }
-    if (status.isGranted) {
-      await platform.invokeMethod('startAdvertising');
-    } else {
-      print("Bluetooth advertising permission not granted");
-    }
-  } on PlatformException catch (e) {
-    print("Failed to start advertising: '${e.message}'.");
-  }
-}
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
