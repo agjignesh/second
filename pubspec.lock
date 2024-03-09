@@ -87,7 +87,7 @@ packages:
     source: sdk
     version: "0.0.0"
   flutter_blue_plus:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: flutter_blue_plus
       sha256: a4e2e7d536f24dfc265a4eb43b63a1293bf6d972ddd243dc3ed2d900b38d9a4d
@@ -113,7 +113,7 @@ packages:
     source: sdk
     version: "0.0.0"
   get:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: get
       sha256: e4e7335ede17452b391ed3b2ede016545706c01a02292a6c97619705e7d2a85e
@@ -193,7 +193,7 @@ packages:
     source: hosted
     version: "1.9.0"
   permission_handler:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: permission_handler
       sha256: "74e962b7fad7ff75959161bb2c0ad8fe7f2568ee82621c9c2660b751146bfe44"

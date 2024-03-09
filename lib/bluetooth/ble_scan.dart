@@ -61,6 +61,8 @@ class _BleScanState extends State<BleScan> {
               _scanresults.add(_device);
             }
           });
+        } else {
+          dispose();
         }
       }
     });

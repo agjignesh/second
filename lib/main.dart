@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:second/bluetooth/advertising.dart';
 import 'package:second/bluetooth/ble_scan.dart';
+import 'package:second/permission/permission_handle.dart';
 import 'firebase_options.dart';
-
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -12,6 +12,7 @@ Future<void> main() async {
   );
   runApp(MyApp());
   startAdvertising();
+  // PermissionsService().requestPermission();
 }
 
 class Course {
