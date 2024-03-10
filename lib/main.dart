@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:second/Login/LoginScreen.dart';
 import 'package:second/bluetooth/advertising.dart';
 import 'package:second/bluetooth/ble_scan.dart';
-import 'package:second/permission/permission_handle.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {
@@ -135,6 +135,14 @@ class _MyHomePageState extends State<MyHomePage> {
               title: const Text('Classes'),
               onTap: () {
                 // Handle Classes button tap
+                Navigator.push(context, MaterialPageRoute( builder: (context) => MyHomePage(),),);
+              },
+            ),
+            ListTile(
+              title: const Text('Login'),
+              onTap: () {
+                // Handle Login button tap
+                Navigator.push(context, MaterialPageRoute( builder: (context) => LoginScreen(),),);
               },
             ),
             ListTile(
